@@ -1,0 +1,276 @@
+<!DOCTYPE html>    
+<html>    
+<head>    
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<style>    
+* {    
+  box-sizing: border-box;    
+}    
+    
+input[type=text], select, textarea {    
+  width: 100%;    
+  padding: 12px;    
+  border: 1px solid rgb(70, 68, 68);    
+  border-radius: 4px;    
+  resize: vertical;    
+}    
+input[type=email], select, textarea {    
+  width: 100%;    
+  padding: 12px;    
+  border: 1px solid rgb(70, 68, 68);    
+  border-radius: 4px;    
+  resize: vertical;    
+}    
+    
+label {    
+  padding: 12px 12px 12px 0;    
+  display: inline-block;    
+}    
+    
+input[type=submit] {    
+  background-color: rgb(37, 116, 161);    
+  color: white;    
+  padding: 12px 20px;    
+  border: none;    
+  border-radius: 4px;    
+  cursor: pointer;    
+  float: right;    
+}    
+    
+input[type=submit]:hover {    
+  background-color: #45a049;    
+}    
+    
+.container {    
+  border-radius: 5px;    
+  background-color: #f2f2f2;    
+  padding: 20px;    
+}    
+    
+.col-25 {    
+  float: left;    
+  width: 25%;    
+  margin-top: 6px;    
+}    
+    
+.col-75 {    
+  float: left;    
+  width: 75%;    
+  margin-top: 6px;    
+}    
+    
+/* Clear floats after the columns */    
+.row:after {    
+  content: "";    
+  display: table;    
+  clear: both;    
+}    
+    
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+/*HEADER*/
+*{  
+    margin: 0;  
+     padding: 0;  
+   box-sizing: border-box;  
+}  
+header{  
+   display: flex;  
+   justify-content: space-evenly;  
+   align-items:center;  
+   height:60px;  
+   width:100%;  
+   background:black;  
+   }  
+.heading ul{  
+     display:flex;  
+     }  
+.logo a{  
+     color:black;  
+     transition-duration: 1s;  
+     font-weight: 800;  
+   }  
+.logo a:hover{  
+     color:rgb(240, 197, 6);  
+ transition-duration: 1s;  
+   }  
+.heading ul li{  
+    list-style: none;  
+   }  
+.heading ul li a{  
+   margin:5px;  
+     text-decoration: none;  
+     color:black;  
+     font-weight: 500;  
+     position:relative;  
+     color:white;  
+     margin:2px 14px;  
+     font-size: 18px;  
+     transition-duration: 1s;  
+   }  
+.heading ul li a:active{  
+     color:red;  
+   }  
+.heading ul li a:hover{  
+     color:rgb(243, 168, 7);  
+     transition-duration: 1s;  
+   }  
+.heading ul li a::before{  
+     content:'';  
+     height:2px;  
+     width:0px;  
+     position:absolute;  
+     left:0;  
+     bottom:0;  
+     background-color: white;  
+     transition-duration: 1s;  
+   }  
+.heading ul li a:hover::before{  
+     width:100%;   
+     transition-duration: 1s;  
+     background-color:rgb(243, 168, 7);  
+   }  
+#input{  
+     height:30px;  
+     width:300px;  
+     text-decoration: none;  
+     border:0px;  
+     padding:5px;  
+   }  
+.logo a{  
+     color: white;  
+     font-size: 35px;  
+     font-weight: 500;  
+     text-decoration:none;  
+   }  
+ion-icon{  
+    width:30px;  
+     height:30px;  
+     background-color: white;  
+     color:black;  
+   }  
+ion-icon:hover{  
+     cursor: pointer;  
+   }  
+.search a{  
+     display:flex;  
+   }  
+.header a ion-icon{  
+ position:relative;  
+     right:3px;  
+   }
+
+   .heading1 {  
+    opacity:0;  
+  }  
+.search{  
+    display:flex;  
+    position: relative;  
+  }      
+</style>    
+</head>    
+<body> 
+    <div>
+        <header>  
+            <div class="logo"><a href="#">MUSIC PLAYER</a></div>  
+            <div class="menu">  
+             <!-- <ul>  
+                <li><a href="#" class="under">HOME</a></li>  
+                <li><a href="#" class="under">REGISTER</a></li>
+                <li><a href="#" class="under">PLAYLIST</a></li>  
+                <li><a href="#" class="under">CONTACT US</a></li>  
+                <li><a href="#" class="under">ABOUT US</a></li>  
+              </ul>  -->
+            </div>  
+            <div class="search">  
+              <a href=""><input type="text" placeholder="search" id="input">  
+                <ion-icon class="s" name="search"></ion-icon>  
+              </a>  
+            </div>  
+            <div class="heading">  
+              <ul>  
+                <li><a href="./Home.html" class="under">HOME</a></li> 
+                <li><a href="./register.html" class="under">REGISTER</a></li> 
+                <li><a href="./player.html" class="under">PLAYER</a></li>  
+                <!--<li><a href="#" class="under">OUR PRODUCTS</a></li>-->
+                <li><a href="./feedback.html" class="under">FEEDBACK</a></li>    
+              </ul>  
+            </div>  
+            <div class="heading1">  
+              <ion-icon name="menu" class="ham"></ion-icon>  
+            </div>  
+          </header> 
+    </div>
+
+<h2>FEED BACK FORM</h2>    
+<div class="container">    
+  <form>    
+    <div class="row">    
+      <div class="col-25">    
+        <label for="fname">First Name</label>    
+      </div>    
+      <div class="col-75">    
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">    
+      </div>    
+    </div>    
+    <div class="row">    
+      <div class="col-25">    
+        <label for="lname">Last Name</label>    
+      </div>    
+      <div class="col-75">    
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">    
+      </div>    
+    </div>    
+    <div class="row">    
+        <div class="col-25">    
+          <label for="email">Mail Id</label>    
+        </div>    
+        <div class="col-75">    
+          <input type="email" id="email" name="mailid" placeholder="Your mail id..">    
+        </div>    
+      </div>    
+    <div class="row">    
+      <div class="col-25">    
+        <label for="country">Country</label>    
+      </div>    
+      <div class="col-75">    
+        <select id="country" name="country">    
+            <option value="none">Select Country</option>    
+          <option value="australia">Australia</option>    
+          <option value="canada">Canada</option>    
+          <option value="usa">USA</option>    
+          <option value="russia">Russia</option>    
+          <option value="japan">Japan</option>    
+          <option value="india">India</option>    
+          <option value="china">China</option>    
+        </select>    
+      </div>    
+    </div>    
+    <div class="row">    
+      <div class="col-25">    
+        <label for="feed_back">Feed Back</label>    
+      </div>    
+      <div class="col-75">    
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>    
+      </div>    
+    </div>    
+    <div class="row">    
+      <input type="submit" value="Submit" onclick="myFunction()">  
+      <p id="demo"></p> 
+    </div>    
+  </form>    
+  <script>
+    function myFunction(){
+        var a;
+        if(confirm("submitted successfully")){
+            a="submitted successfully!";
+        }
+        else{
+            a="not sebmitted!";
+        }
+        document.getElementById("demo").innerHTML=a;
+    }
+  </script>
+</div>    
+    
+</body>    
+</html>    

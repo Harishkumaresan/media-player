@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<head>
+<title>Login Form Design</title>
+<link rel="stylesheet" type="text/css" href="style3.css">
+    </head>  
+
+<body id="login">
+    <div>
+        <header>  
+            <div class="logo"><a href="#">MUSIC PLAYER</a></div>  
+            <div class="menu">  
+             <!-- <ul>  
+                <li><a href="#" class="under">HOME</a></li>  
+                <li><a href="#" class="under">REGISTER</a></li>
+                <li><a href="#" class="under">PLAYLIST</a></li>  
+                <li><a href="#" class="under">CONTACT US</a></li>  
+                <li><a href="#" class="under">ABOUT US</a></li>  
+              </ul>  -->
+            </div>  
+            <div class="search">  
+              <a href=""><input type="text" placeholder="search" id="input">  
+                <ion-icon class="s" name="search"></ion-icon>  
+              </a>  
+            </div>  
+            <div class="heading">  
+              <ul>  
+                <li><a href="./Home.html" class="under">HOME</a></li> 
+                <li><a href="./register.html" class="under">REGISTER</a></li> 
+                <li><a href="./player.html" class="under">PLAYER</a></li>  
+                <!--<li><a href="#" class="under">OUR PRODUCTS</a></li>-->
+                <li><a href="./feedback.html" class="under">FEEDBACK</a></li>  
+              </ul>  
+            </div>  
+            <div class="heading1">  
+              <ion-icon name="menu" class="ham"></ion-icon>  
+            </div>  
+          </header> 
+    </div>
+
+<div class="box">
+
+    <img src="./images/user.png" class="user">
+
+        <h1>Login Here</h1>
+
+        <form name="myform"  action="login.php" method="POST" >
+
+            <p>Username</p>
+            <input type="text" name="uname" placeholder="Enter Username " required="">
+
+            <p>Password</p>
+            <input type="password" name="upswd" placeholder="Enter Password" required="">
+
+
+           <button type="submit" name="" value="Login" onclick="myFunction()">
+            <a href='./player.html' style="color:white; text-decoration:none">Submit</a>
+          </button>
+         <P id="demo"></P>
+
+            <br><br>
+            <a href="./register.html">Register for new account ?</a>
+
+        </form>
+        <script>
+            function myFunction(){
+                var a;
+                if(confirm("login successfull")){
+                    a="submitted successfully!";
+                }
+                else{
+                    a="not sebmitted!";
+                }
+                document.getElementById("demo").innerHTML=a;
+            }
+          </script>
+        
+    </div> 
+    
+
+</body>
+</html>

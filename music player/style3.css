@@ -1,0 +1,316 @@
+*{  
+    margin: 0;  
+     padding: 0;  
+   box-sizing: border-box;  
+}  
+header{  
+   display: flex;  
+   justify-content: space-evenly;  
+   align-items:center;  
+   height:60px;  
+   width:100%;  
+   background:black;  
+   }  
+.heading ul{  
+     display:flex;  
+     }  
+.logo a{  
+     color:black;  
+     transition-duration: 1s;  
+     font-weight: 800;  
+   }  
+.logo a:hover{  
+     color:rgb(240, 197, 6);  
+ transition-duration: 1s;  
+   }  
+.heading ul li{  
+    list-style: none;  
+   }  
+.heading ul li a{  
+   margin:5px;  
+     text-decoration: none;  
+     color:black;  
+     font-weight: 500;  
+     position:relative;  
+     color:white;  
+     margin:2px 14px;  
+     font-size: 18px;  
+     transition-duration: 1s;  
+   }  
+.heading ul li a:active{  
+     color:red;  
+   }  
+.heading ul li a:hover{  
+     color:rgb(243, 168, 7);  
+     transition-duration: 1s;  
+   }  
+.heading ul li a::before{  
+     content:'';  
+     height:2px;  
+     width:0px;  
+     position:absolute;  
+     left:0;  
+     bottom:0;  
+     background-color: white;  
+     transition-duration: 1s;  
+   }  
+.heading ul li a:hover::before{  
+     width:100%;   
+     transition-duration: 1s;  
+     background-color:rgb(243, 168, 7);  
+   }  
+#input{  
+     height:30px;  
+     width:300px;  
+     text-decoration: none;  
+     border:0px;  
+     padding:5px;  
+   }  
+.logo a{  
+     color: white;  
+     font-size: 35px;  
+     font-weight: 500;  
+     text-decoration:none;  
+   }  
+ion-icon{  
+    width:30px;  
+     height:30px;  
+     background-color: white;  
+     color:black;  
+   }  
+ion-icon:hover{  
+     cursor: pointer;  
+   }  
+.search a{  
+     display:flex;  
+   }  
+.header a ion-icon{  
+ position:relative;  
+     right:3px;  
+   }
+
+   .heading1 {  
+    opacity:0;  
+  }  
+.search{  
+    display:flex;  
+    position: relative;  
+  }  
+ #login{
+    margin: 0;
+    padding: 0;
+    background: url(./images/background\ img1.jpeg)no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    font-family: sans-serif;
+  }
+  
+  .box{
+  
+  
+    background: #f5f5f5;
+    color: red;
+    top: 50%;
+    left: 30%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+  }
+  
+  
+  
+  .user{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+  }
+  
+  h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+    color: black;
+  }
+  
+  p{
+    color: #f49126;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+  }
+  
+  input{
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"], input[type="password"] ,input[type="email"]
+  {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #673ab7;
+    font-size: 16px;
+  }
+  
+  input[type="submit"], button
+  {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #2196f3;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+  padding-left: 4px;
+  padding-right: 4px;
+
+  }
+  
+  
+  input[type="submit"]:hover
+  {
+    cursor: pointer;
+    background: #0097a7;
+  }
+  
+  a
+  {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 20px;
+    color: #069818;
+  }
+  
+  
+  a:hover
+  {
+    color: red;
+  }
+ /*media player */
+
+ #media {
+  background-color: blueviolet
+
+  /* Smoothly transition the background color */
+  transition: background-color .5s;
+  background: url(./images/background\ img1.jpeg)no-repeat center center fixed;
+}
+
+.player {
+  height: 95vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.track-art {
+  margin: 25px;
+  height: 250px;
+  width: 250px;
+  background-image: url("./images/medial\ background\ img.webp");
+  background-size: cover;
+  border-radius: 15%;
+}
+
+.now-playing {
+  font-size: 1rem;
+}
+
+.track-name {
+  font-size: 3rem;
+}
+
+.track-artist {
+  font-size: 1.5rem;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.playpause-track, .prev-track, .next-track {
+  padding: 25px;
+  opacity: 0.8;
+
+  /* Smoothly transition the opacity */
+  transition: opacity .2s;
+}
+
+.playpause-track:hover, .prev-track:hover, .next-track:hover {
+  opacity: 1.0;
+}
+
+.slider_container {
+  width: 75%;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modify the appearance of the slider */
+.seek_slider, .volume_slider {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 5px;
+  background: black;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+/* Modify the appearance of the slider thumb */
+.seek_slider::-webkit-slider-thumb, .volume_slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: rgb(91, 3, 3);
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.seek_slider:hover, .volume_slider:hover {
+  opacity: 1.0;
+}
+
+.seek_slider {
+  width: 60%;
+}
+
+.volume_slider {
+  width: 30%;
+}
+
+.current-time, .total-duration {
+  padding: 10px;
+}
+
+i.fa-volume-down, i.fa-volume-up {
+  padding: 10px;
+}
+
+i.fa-play-circle, i.fa-pause-circle, i.fa-step-forward, i.fa-step-backward {
+  cursor: pointer;
+}
